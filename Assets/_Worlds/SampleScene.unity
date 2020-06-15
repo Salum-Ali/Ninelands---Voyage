@@ -704,9 +704,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c882749efaa544ead593c8c8dc8c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveFrequency: 0.25
-  waveHeight: 0.125
-  waveLength: 1
+  waveFrequency: 0.53
+  waveHeight: 0.48
+  waveLength: 0.71
   edgeBlend: 1
   forceFlatShading: 1
 --- !u!64 &1935075510

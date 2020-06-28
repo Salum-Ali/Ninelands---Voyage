@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626862287495000313}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: -4, z: 0.5}
+  m_LocalPosition: {x: -5, y: -3.7, z: 0.5}
   m_LocalScale: {x: 5.71424, y: 5.71424, z: 0.18962756}
   m_Children: []
   m_Father: {fileID: 6738862061101522540}
@@ -74,7 +74,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2418379056864502238}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -4, z: -0.5}
+  m_LocalPosition: {x: 5, y: -3.7, z: -0.5}
   m_LocalScale: {x: 5.71424, y: 5.71424, z: 0.18962756}
   m_Children: []
   m_Father: {fileID: 6738862061101522540}
@@ -153,7 +153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4252668915241347230}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -4, z: 0.5}
+  m_LocalPosition: {x: 5, y: -3.7, z: 0.5}
   m_LocalScale: {x: 5.71424, y: 5.71424, z: 0.18962756}
   m_Children: []
   m_Father: {fileID: 6738862061101522540}
@@ -191,6 +191,8 @@ GameObject:
   - component: {fileID: 3509735682152604392}
   - component: {fileID: 7626234756529301463}
   - component: {fileID: 2765921879693644662}
+  - component: {fileID: 6719403235445006126}
+  - component: {fileID: 5278667954310838740}
   m_Layer: 0
   m_Name: RaftBoat
   m_TagString: Untagged
@@ -287,7 +289,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8676905780292506167}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ef855b615cce06439bb788f650d1805, type: 3}
   m_Name: 
@@ -309,9 +311,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   COM: {x: 0, y: 0, z: 0}
-  speed: 0.125
+  speed: 0.75
   steerSpeed: 2.5
-  movementThresold: 25
+  movementThresold: 50
+--- !u!64 &6719403235445006126
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676905780292506167}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5274955605420669054, guid: f92fa58e2e7632d438e1d7ec479a5d59, type: 3}
+--- !u!114 &5278667954310838740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676905780292506167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e002d7a4c89e67409f31205787168b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidBody: {fileID: 3509735682152604392}
+  depthBeforeSubmerged: 1
+  displacementAmount: 3
+  floaterCount: 4
+  waterDrag: 0.99
+  waterAngularDrag: 0.5
 --- !u!1 &8750753154705819880
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8750753154705819880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: -4, z: -0.5}
+  m_LocalPosition: {x: -5, y: -3.7, z: -0.5}
   m_LocalScale: {x: 5.71424, y: 5.71424, z: 0.18962756}
   m_Children: []
   m_Father: {fileID: 6738862061101522540}

@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amplitude: 0.25
-  length: 2
+  length: 10
   speed: 1
   offset: 0
 --- !u!114 &3447719508423107937
